@@ -29,7 +29,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.coursesapp.data.Course
+import com.example.coursesapp.data.DataSource
+import com.example.coursesapp.model.Course
 import com.example.coursesapp.ui.theme.CoursesAppTheme
 
 class MainActivity : ComponentActivity() {

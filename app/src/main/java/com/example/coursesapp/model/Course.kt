@@ -1,4 +1,4 @@
-package com.example.coursesapp.data
+package com.example.coursesapp.model
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes

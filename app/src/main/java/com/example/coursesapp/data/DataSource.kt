@@ -1,6 +1,7 @@
-package com.example.coursesapp
+package com.example.coursesapp.data
 
-import com.example.coursesapp.data.Course
+import com.example.coursesapp.R
+import com.example.coursesapp.model.Course
 
 // singleton object
 object DataSource {
