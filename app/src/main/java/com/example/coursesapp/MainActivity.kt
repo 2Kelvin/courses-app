@@ -16,6 +16,7 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -51,7 +52,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun CoursesApp(modifier: Modifier = Modifier) {
+fun CoursesApp() {
     // passing in the datasource list of courses
     // applying a padding of 8.dp to AllCourses composable
     AllCourses(courses = DataSource.topics)
@@ -89,12 +90,12 @@ fun OneCourse(course: Course, modifier: Modifier = Modifier) {
                 )
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     // course topics icon
-                    Image(
+                    Icon(
                         painter = painterResource(id = R.drawable.ic_grain),
                         contentDescription = null,
                     )
                     Text( // course topics
-                        text = "${course.topics}",
+                        text = course.topics.toString(),
                         modifier = modifier.padding(start = 8.dp),
                         style = MaterialTheme.typography.labelMedium
                     )
