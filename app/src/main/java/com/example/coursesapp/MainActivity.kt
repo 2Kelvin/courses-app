@@ -111,8 +111,8 @@ fun AllCourses(courses: List<Course>, modifier: Modifier = Modifier) {
     // display a vertical grid with 2 columns
     LazyVerticalGrid(
         columns = GridCells.Fixed(2),
-        horizontalArrangement = Arrangement.spacedBy(12.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
         modifier = modifier.padding(8.dp)
     ) {
         // passing the list to items property
