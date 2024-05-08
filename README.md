@@ -5,36 +5,36 @@
 ## FutureMe Notes
 
 - add elevation & background-color to a surface like so:
-```kotlin
-Surface(
-        // adding elevation
-        shadowElevation = 12.dp,
-        // adding a background-color
-        color = Color(0xFFe5e2e7)
-)
-```
-- insert custom imported icons using the Icon composable
-```kotlin
-Icon(
-        painter = painterResource(id = R.drawable.ic_grain),
-        contentDescription = null,
+    ```kotlin
+    Surface(
+            // adding elevation
+            shadowElevation = 12.dp,
+            // adding a background-color
+            color = Color(0xFFe5e2e7)
     )
-```
+    ```
+- insert custom imported icons using the Icon composable
+    ```kotlin
+    Icon(
+            painter = painterResource(id = R.drawable.ic_grain),
+            contentDescription = null,
+        )
+    ```
 - use a vertical scrolling grid like so:
-```kotlin
-LazyVerticalGrid(
-        // making a grid of 2 columns
-        columns = GridCells.Fixed(2),
-        // horizontal gap between grid items
-        horizontalArrangement = Arrangement.spacedBy(8.dp),
-        // vertical gap between grid items
-        verticalArrangement = Arrangement.spacedBy(8.dp),
-        modifier = modifier.padding(8.dp)
-    ) {
-        // passing the data list to items property
-        items(courses) {eachItem ->
-            // displaying each list item using a reusable composable OneCourse
-            OneCourse(course = eachItem)
-        }
-}
-```
+    ```kotlin
+    LazyVerticalGrid(
+            // making a grid of 2 columns
+            columns = GridCells.Fixed(2),
+            // horizontal gap between grid items
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+            // vertical gap between grid items
+            verticalArrangement = Arrangement.spacedBy(8.dp),
+            modifier = modifier.padding(8.dp)
+        ) {
+            // passing the data list to items property
+            items(courses) {eachItem ->
+                // displaying each list item using a reusable composable OneCourse
+                OneCourse(course = eachItem)
+            }
+    }
+    ```
